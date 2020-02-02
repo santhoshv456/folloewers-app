@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy:firebase": "ng build --prod && firebase deploy",
+    "deploy:gh": "ng build --prod --base-href='https://santhoshv456.github.io/folloewers-app/' && ngh"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "@angular/router": "^4.0.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "jira-connector": "^3.1.0",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },
